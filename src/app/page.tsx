@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import backgroundImage from "./../../public/dark_colorado.jpg";
 export default function Home() {
