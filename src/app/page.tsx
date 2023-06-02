@@ -17,9 +17,9 @@ export default function Home() {
         <h1 className="absolute top-[300px] text-2xl text-center font-semibold text-white">
         Ride with Confidence: Reliable Non-Emergency Medical Transportation Services at Your Fingertips!
         </h1>
-        <Link href="/schedule" className=" absolute top-[450px] focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 ml-44 mb-2 dark:focus:ring-yellow-900">Schedule a Ride</Link>
+        <Link href="/schedule" className=" absolute top-[450px] focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 ml-32 mb-2 dark:focus:ring-yellow-900">Schedule a Ride</Link>
       </div>
-      <div className='ml-10'>
+      <div className='ml-4'>
         <h1 className="mt-5 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">Non Emergency Medicaid Transportation Services</h1>
         <ul className='text-gray-500'>
           <li className="text-body-color mb-4 flex text-base">
