@@ -10,9 +10,7 @@ import backgroundImage from "./../../public/dark_colorado.jpg";
 export default function Home() {
   return (
     <div>
-    <Router>
       <Navbar />
-    </Router>
       <div className='relative'>
         <Image className="h-[600px] w-full object-cover " src={backgroundImage} alt='Peak Elite Background Image'/>
         <h1 className='absolute top-[200px] text-4xl text-center font-semibold text-white'>Book your ride from anywhere today!</h1>
