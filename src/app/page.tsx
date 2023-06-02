@@ -1,5 +1,8 @@
+"use client"; // This is a client component
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { BrowserRouter as Router} from 'react-router-dom';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -7,14 +10,16 @@ import backgroundImage from "./../../public/dark_colorado.jpg";
 export default function Home() {
   return (
     <div>
-      <Navbar/>
+    <Router>
+      <Navbar />
+    </Router>
       <div className='relative'>
         <Image className="h-[600px] w-full object-cover " src={backgroundImage} alt='Peak Elite Background Image'/>
         <h1 className='absolute top-[200px] text-4xl text-center font-semibold text-white'>Book your ride from anywhere today!</h1>
         <h1 className="absolute top-[300px] text-2xl text-center font-semibold text-white">
         Ride with Confidence: Reliable Non-Emergency Medical Transportation Services at Your Fingertips!
         </h1>
-        <Link href="/schedule" className=" absolute top-[450px] focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 ml-32 mb-2 dark:focus:ring-yellow-900">Schedule a Ride</Link>
+        <Link href="/schedule" className=" absolute top-[450px] focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 ml-44 mb-2 dark:focus:ring-yellow-900">Schedule a Ride</Link>
       </div>
       <div className='ml-10'>
         <h1 className="mt-5 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">Non Emergency Medicaid Transportation Services</h1>
