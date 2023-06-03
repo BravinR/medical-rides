@@ -7,7 +7,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [activePage, setActivePage] = useState("home");
 
-  const handlePageChange = (page:any) => {
+  const handlePageChange = (page: any) => {
     setActivePage(page);
   };
 
@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="bg-white border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" passHref className="flex items-center">
-            <Image className="w-28" src={logo} alt="Peak Elite logo" />
+          <Image className="w-28" src={logo} alt="Peak Elite logo" />
         </Link>
         <h1>Call or text +1 719-233-0707</h1>
         <button
@@ -55,64 +55,88 @@ const Navbar = () => {
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
             <li>
-              <Link href="/" passHref
-                  className={`block py-2 pl-3 pr-4 ${
-                    activePage === "home"
-                      ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                      : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                  } `}
-                  aria-current="page"
-                  onClick={() => handlePageChange("home")}
-                >
-                  Home
+              <Link
+                href="/"
+                passHref
+                className={`block py-2 pl-3 pr-4 ${
+                  activePage === "home"
+                    ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                    : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                } `}
+                aria-current="page"
+                onClick={() => handlePageChange("home")}
+              >
+                Home
               </Link>
             </li>
             <li>
-              <Link href="/schedule" passHref
-                  className={`block py-2 pl-3 pr-4 ${
-                    activePage === "schedule"
-                      ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                      : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                  } `}
-                  onClick={() => handlePageChange("schedule")}
-                >
-                  Schedule
+              <Link
+                href="/schedule"
+                passHref
+                className={`block py-2 pl-3 pr-4 ${
+                  activePage === "schedule"
+                    ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                    : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                } `}
+                onClick={() => handlePageChange("schedule")}
+              >
+                Schedule
               </Link>
             </li>
             <li>
-              <Link href="/about" passHref
-                  className={`block py-2 pl-3 pr-4 ${
-                    activePage === "about"
-                      ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                      : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                  } `}
-                  onClick={() => handlePageChange("about")}
-                >
-                  About
+              <Link
+                href="/about"
+                passHref
+                className={`block py-2 pl-3 pr-4 ${
+                  activePage === "about"
+                    ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                    : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                } `}
+                onClick={() => handlePageChange("about")}
+              >
+                About
               </Link>
             </li>
             <li>
-              <Link href="/services" passHref
-                  className={`block py-2 pl-3 pr-4 ${
-                    activePage === "services"
-                      ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                      : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                  } `}
-                  onClick={() => handlePageChange("services")}
-                >
-                  Services
+              <Link
+                href="/services"
+                passHref
+                className={`block py-2 pl-3 pr-4 ${
+                  activePage === "services"
+                    ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                    : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                } `}
+                onClick={() => handlePageChange("services")}
+              >
+                Services
               </Link>
             </li>
             <li>
-              <Link href="/contact" passHref
-                  className={`block py-2 pl-3 pr-4 ${
-                    activePage === "contact"
-                      ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                      : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                  } `}
-                  onClick={() => handlePageChange("contact")}
-                >
-                  Contact
+              <Link
+                href="/contact"
+                passHref
+                className={`block py-2 pl-3 pr-4 ${
+                  activePage === "contact"
+                    ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                    : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                } `}
+                onClick={() => handlePageChange("contact")}
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/faq"
+                passHref
+                className={`block py-2 pl-3 pr-4 ${
+                  activePage === "faq"
+                    ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                    : "text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                } `}
+                onClick={() => handlePageChange("faq")}
+              >
+                FAQ`&apos;`s
               </Link>
             </li>
           </ul>
