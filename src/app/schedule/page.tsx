@@ -1,5 +1,6 @@
 "use client"; // Remove this line
 import React from "react";
+import { useRouter } from 'next/navigation';
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import Link from 'next/link';
@@ -8,16 +9,16 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 const Schedule = () => {
-  const { register, handleSubmit, reset } = useForm();
-  const { submit } = useWeb3Forms({
+    const router = useRouter();
+    const { register, handleSubmit, reset } = useForm();
+    const { submit } = useWeb3Forms({
     access_key: '378de2ec-f6e7-4f1e-9fbe-e35bc39537d2',
     settings: {
       from_name: "Peak Elite Medride",
       subject: "New Schedule Request from your Website",
     },
     onSuccess: (msg, data) => {
-      console.log("Form submitted successfully:", data);
-      reset(); // Reset the form after successful submission
+        router.push("/thanks");
     },
     onError: (msg, data) => {
       console.error("Form submission error:", data);
