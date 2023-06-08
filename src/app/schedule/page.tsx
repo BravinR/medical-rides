@@ -1,5 +1,5 @@
 "use client"; // Remove this line
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from 'next/navigation';
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
@@ -11,6 +11,7 @@ import Footer from '../../components/Footer';
 const Schedule = () => {
     const router = useRouter();
     const { register, handleSubmit, reset } = useForm();
+    const [isLoading, setIsLoading] = useState(false);
     const { submit } = useWeb3Forms({
     access_key: '378de2ec-f6e7-4f1e-9fbe-e35bc39537d2',
     settings: {
@@ -25,8 +26,15 @@ const Schedule = () => {
     },
   });
 
-  const onSubmit = (data:any) => {
-    submit(data); // Trigger the form submission
+  const onSubmit = async (data: any) => {
+    setIsLoading(true);
+    try {
+      await submit(data);
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -103,8 +111,9 @@ const Schedule = () => {
         <button
           className="focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 ml-32 mb-2 dark:focus:ring-yellow-900"
           onClick={handleSubmit(onSubmit)}
+          disabled={isLoading}
         >
-          Submit
+          {isLoading ? "Submitting..." : "Submit"}
         </button>
       </div>
       <Footer />
