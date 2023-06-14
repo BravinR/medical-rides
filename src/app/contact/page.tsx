@@ -16,7 +16,6 @@ const Contact = () => {
       subject: "New Contact Message from your Website",
     },
     onSuccess: (msg, data) => {
-      console.log("Form submitted successfully:", data);
       reset(); // Reset the form after successful submission
     },
     onError: (msg, data) => {

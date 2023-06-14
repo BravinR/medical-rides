@@ -106,17 +106,17 @@ export default function Home() {
           <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 ">Here at Peak Elite we understand that your safety and comfort are our top priorities. That&apos;s why we offer: </p>
           <a href="#" className="block max-w-sm p-6  border rounded-lg shadow bg-gray-800 ">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">Safety Guarantee:</h5>
-            <p className="font-normal text-gray-700 ">Our drivers are carefully selected and thoroughly trained to ensure that they meet our high safety standards. 
+            <p className="font-normal text-gray-400 ">Our drivers are carefully selected and thoroughly trained to ensure that they meet our high safety standards. 
             Our vehicles are equipped with state-of-the-art technology to monitor and ensure the safety of each ride.</p>
           </a>
           <a href="#" className="mt-5 block max-w-sm p-6 border rounded-lg shadow  bg-gray-800">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">Fast Pickups:</h5>
-            <p className="font-normal text-gray-700 ">We know that time is of the essence, especially when it comes to medical appointments. That&apos;s why we pride ourselves on our fast pickup times. 
+            <p className="font-normal text-gray-400 ">We know that time is of the essence, especially when it comes to medical appointments. That&apos;s why we pride ourselves on our fast pickup times. 
             Our drivers are trained to arrive promptly and get you to your destination on time.</p>
           </a>
           <a href="#" className="mt-5 block max-w-sm p-6 border rounded-lg shadow bg-gray-800">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">24/7 Support:</h5>
-            <p className="font-normal text-gray-700">We&apos;re here for you whenever you need us. Our customer support team is available 24/7 to answer your questions, 
+            <p className="font-normal text-gray-400">We&apos;re here for you whenever you need us. Our customer support team is available 24/7 to answer your questions, 
             make changes to your reservations, or help you with any other needs you may have.</p>
           </a>
         </div>
