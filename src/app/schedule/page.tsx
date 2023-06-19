@@ -53,28 +53,6 @@ const Schedule = () => {
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="dateOfBirth" className="block mb-2 text-sm font-medium text-black">
-            Date of Birth
-          </label>
-          <input
-            type="text"
-            id="dateOfBirth"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            {...register("dateOfBirth")}
-          />
-        </div>
-        <div className="mb-6">
-          <label htmlFor="medicaidId" className="block mb-2 text-sm font-medium text-black">
-            Medicaid ID Number
-          </label>
-          <input
-            type="text"
-            id="medicaidId"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            {...register("medicaidId")}
-          />
-        </div>
-        <div className="mb-6">
           <label htmlFor="phone" className="block mb-2 text-sm font-medium text-black">
             Phone Number
           </label>
