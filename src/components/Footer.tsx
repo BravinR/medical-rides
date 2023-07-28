@@ -6,35 +6,19 @@ const Footer = () => {
       <footer className="bg-gray-800 mt-5 shadow">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-start md:justify-between">
           <div className="">
-            <div className="md:grid md:grid-cols-4 md:gap-x-8">
+            <div className="md:grid md:grid-cols-3 md:gap-x-8">
               <div className="mb-4">
                 <h1 className="font-semibold text-white">Main Office:</h1>
                 <p className="text-sm text-gray-400 ">
-                  8346 SPRAGUE WAY
+                  6547 N Academy Boulevard #1129
                   <br />
-                  COLORADO SPRINGS, CO 80908
+                  COLORADO SPRINGS, CO 80918
                 </p>
                 <p className="text-sm text-gray-400 ">
                   Phone Number: +1 (719) 233-0707
                 </p>
                 <p className="text-sm text-gray-400 ">
-                  Email Address: peakelitemedride@gmail.com
-                </p>
-              </div>
-              <div className="mb-4">
-                <h1 className="font-semibold text-white">Satellite Office:</h1>
-                <p className="text-sm text-gray-400 ">
-                  
-                  6228 Dancing water Drive
-                  <br />
-                  Colorado Springs, Colorado, 80911
-                </p>
-                <p className="text-sm text-gray-400 ">
-                  Phone Numbers:
-                  <br />
-                  +1 (806) 787-6905
-                  <br />
-                  +1 (719) 306-7313
+                  Email Address: info@peakelitemedride.com
                 </p>
               </div>
               <div className="mb-8">
