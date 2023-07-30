@@ -24,21 +24,19 @@ const Footer = () => {
               <div className="mb-8">
               <h1 className="font-semibold text-white">Office hours:</h1>
                 <p className="text-sm text-gray-400 ">
-                  Monday 6:00 am - 8:00 pm
+                  Monday 24 hours
                   <br />
-                  Tuesday 6:00 am - 8:00 pm
+                  Tuesday 24 hours
                   <br />
-                  Wednesday 6:00 am - 8:00 pm
+                  Wednesday 24 hours
                   <br />
-                  Thursday 6:00 am - 8:00 pm
+                  Thursday 24 hours
                   <br />
-                  Friday 6:00 am - 8:00 pm
+                  Friday 24 hours
                   <br />
-                  Saturday 6:00 am - 8:00 pm
+                  Saturday 24 hours
                   <br />
-                  Sunday 6:00 am - 1pm
-                  <br />
-                  Closed on Sunday Afternoon and Evening.
+                  Sunday 24 hours
                 </p>
               </div>
               <div>
