@@ -8,11 +8,11 @@ const Footer = () => {
           <div className="">
             <div className="md:grid md:grid-cols-3 md:gap-x-8">
               <div className="mb-4">
-                <h1 className="font-semibold text-white">Main Office:</h1>
+                <h1 className="font-semibold text-white">Office Location:</h1>
                 <p className="text-sm text-gray-400 ">
-                  6547 N Academy Boulevard #1129
+                  8346 Sprague Way
                   <br />
-                  COLORADO SPRINGS, CO 80918
+                  COLORADO SPRINGS, CO 80908
                 </p>
                 <p className="text-sm text-gray-400 ">
                   Phone Number: +1 (719) 233-0707
