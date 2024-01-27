@@ -10,7 +10,7 @@ const About = () => {
       <div>
           <div className="mx-8 text-sm">
               <Navbar />
-              <div className='flex justify-center items-center mb-10'>
+              <div className="flex justify-center items-center mb-10">
                   <Image className="" src={logo} alt="Peak Elite logo" />
               </div>
               <div className="flex flex-col justify-center items-center">
@@ -20,8 +20,8 @@ const About = () => {
               <div className="h-6 border-t border-slate-900 mt-4">
               </div>
               <p>
-                  The patient's medical provider completes this form which will be used to verify that any trip requested over 25miles has
-                  been confirmed as needed by the member’s medical provider. There are no closer providers to this member that can
+                  The patient&apos;s medical provider completes this form which will be used to verify that any trip requested over 25miles has
+                  been confirmed as needed by the member&apos;s medical provider. There are no closer providers to this member that can
                   provide needed service are the reasons for submittal. This information can be emailed or mailed to Peak Elite Medride.
               </p>
 
@@ -131,7 +131,7 @@ const About = () => {
                   <input
                       className="p-4 pb-28 border border-gray-600 rounded-lg w-full text-gray-700 text-start"
                       type="text"
-                      placeholder="Explain why patient cannot be seen by or transported to a provider closer to the patient's home:"
+                      placeholder="Explain why patient cannot be seen by or transported to a provider closer to the patient&apos;s home:"
                   />
               </div>
               <h1 className="font-bold mt-8">Agreement and signature:</h1>
