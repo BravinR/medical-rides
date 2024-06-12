@@ -1,7 +1,7 @@
 "use client";
 import { DestinationCoordiContext } from "@/context/DestinationCoordiContext";
 import { SourceCoordiContext } from "@/context/SourceCoordiContext";
-import React, { useEffect, useState, useContext, useRef } from "react";
+import React, { useEffect, useState, useContext, useRef, useCallback } from "react";
 
 const session_token = "0e4d5549-e85f-4591-88f5-11822aa0aaba";
 const MAPBOX_RETRIEVE_URL = "https://api.mapbox.com/search/searchbox/v1/retrieve/";
@@ -55,16 +55,16 @@ function Autocomplete() {
   }, [sourceInput]);
 
 
-  const getdestinationAddressList = async () => {
-    const destinationres = await fetch("api/autofill-address?q=" + destination, {
+  const getDestinationAddressList = useCallback(async () => {
+    const destinationRes = await fetch("/api/autofill-address?q=" + destination, {
       headers: {
         "Content-Type": "application/json",
       },
     });
 
-    const destinationresult = await destinationres.json();
-    setDestinationAddressList(destinationresult.searchResult.suggestions);
-  };
+    const destinationResult = await destinationRes.json();
+    setDestinationAddressList(destinationResult.searchResult.suggestions);
+  }, [destination]);
 
   useEffect(() => {
     if (isResultClick.current) {
@@ -72,10 +72,10 @@ function Autocomplete() {
       return;
     }
     const delayDebounceFn = setTimeout(() => {
-      getdestinationAddressList();
+      getDestinationAddressList();
     }, 1000);
     return () => clearTimeout(delayDebounceFn);
-  }, [destination]);
+  }, [destination, getDestinationAddressList]);
 
   // Longitude and latitude
   const { sourceCoordinates, setSourceCoordinates } =
