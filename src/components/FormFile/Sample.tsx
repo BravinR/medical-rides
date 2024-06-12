@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client';
 import { useCallback, useState } from 'react';
 import { useResizeObserver } from '@wojtekmaj/react-hooks';
@@ -11,7 +10,10 @@ import '../../app/forms/Sample.css';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import DownloadButton from './DownloadButton';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 
 const options = {
