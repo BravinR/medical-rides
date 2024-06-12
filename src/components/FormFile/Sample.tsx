@@ -10,11 +10,7 @@ import '../../app/forms/Sample.css';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import DownloadButton from './DownloadButton';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
-
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const options = {
   cMapUrl: '/cmaps/',
