@@ -25,9 +25,9 @@ type PDFFile = string | File | null;
 
 export default function Sample() {
   const [file, setFile] = useState<PDFFile>('./Verification Form For Transportation Services More Than 25 Miles.pdf');
-  const [numPages, setNumPages] = useState<number>();
+  const [numPages, setNumPages] = useState<number>(0);
   const [containerRef, setContainerRef] = useState<HTMLElement | null>(null);
-  const [containerWidth, setContainerWidth] = useState<number>();
+  const [containerWidth, setContainerWidth] = useState<number>(0);
 
   const onResize = useCallback<ResizeObserverCallback>((entries) => {
     const [entry] = entries;
