@@ -1,4 +1,5 @@
 "use client";
+import { useAddressContext } from "@/context/AddressContext";
 import { DestinationCoordiContext } from "@/context/DestinationCoordiContext";
 import { SourceCoordiContext } from "@/context/SourceCoordiContext";
 import React, { useEffect, useState, useContext, useRef, useCallback } from "react";
@@ -16,8 +17,9 @@ function Autocomplete() {
   const [addressList, setAddressList] = useState<Suggestion[]>([]);
   const isResultClick = useRef(false);
   const debounceTimeout = useRef<number | null>(null);
-  const [destination, setdestination] = useState<any>(null);
+  const [destination, setDestination] = useState<string>('');
   const [destinationAddressList, setDestinationAddressList] = useState<Suggestion[]>([]);
+  const { setSourceAddress, setDestinationAddress } = useAddressContext();
 
   useEffect(() => {
     if (sourceInput.length === 0) {
@@ -88,6 +90,7 @@ function Autocomplete() {
     try {
       isResultClick.current = true;
       setSourceInput(item.place_name);
+      setSourceAddress(item.place_name);
       setAddressList([]);
 
       const response = await fetch(`api/search-address?q=${encodeURIComponent(item.place_name)}`);
@@ -112,7 +115,8 @@ function Autocomplete() {
   const onDestinationAddressClick = async (item: Suggestion) => {
     try {
       isResultClick.current = true;
-      setdestination(item.place_name);
+      setDestination(item.place_name);
+      setDestinationAddress(item.place_name)
       setDestinationAddressList([]);
 
       const response = await fetch(`api/search-address?q=${encodeURIComponent(item.place_name)}`);
@@ -143,7 +147,7 @@ function Autocomplete() {
           placeholder="Address"
           type="text"
           className="bg-white p-1 focus:border-yellow-300 border-[1px] w-full rounded-md outline-none"
-          value={sourceInput}
+          value={sourceInput || ''}
           onChange={(e) => setSourceInput(e.target.value)}
         />
         {sourceInput && addressList.length > 0 && (
@@ -169,8 +173,8 @@ function Autocomplete() {
         <input
           type="text"
           className="bg-white p-1 focus:border-yellow-300 border-[1px] w-full rounded-md outline-none"
-          value={destination}
-          onChange={(e) => setdestination(e.target.value)}
+          value={destination || ''}
+          onChange={(e) => setDestination(e.target.value)}
         />
         {destination &&
           destinationAddressList.length > 0 && (
