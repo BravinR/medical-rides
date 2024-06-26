@@ -23,8 +23,7 @@ function MapBoxMap() {
   const context = useContext(FormDetailsContext);
 
   if (!context) {
-    console.error('Context is missing');
-    return;
+    throw new Error('FormDetails must be used within a FormDetailsProvider');
   }
 
   const { formDetails } = context;
