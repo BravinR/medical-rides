@@ -2,28 +2,28 @@ import Link from "next/link";
 import React, { ReactNode } from "react";
 
 // Card component and subcomponents
-export function Card({ children, className }: { children: ReactNode; className?: string }) {
+function Card({ children, className }: { children: ReactNode; className?: string }) {
   return <div className={`bg-white shadow-md rounded-lg ${className}`}>{children}</div>;
 }
 
-export function CardHeader({ children, className }: { children: ReactNode; className?: string }) {
-  return <div className={`p-4 border-b border-gray-200 ${className}`}>{children}</div>;
+function CardHeader({ children, className }: { children: ReactNode; className?: string }) {
+  return <div className={`p-4  ${className}`}>{children}</div>;
 }
 
-export function CardTitle({ children, className }: { children: ReactNode; className?: string }) {
+function CardTitle({ children, className }: { children: ReactNode; className?: string }) {
   return <h2 className={`text-lg font-semibold ${className}`}>{children}</h2>;
 }
 
-export function CardContent({ children, className }: { children: ReactNode; className?: string }) {
+function CardContent({ children, className }: { children: ReactNode; className?: string }) {
   return <div className={`p-4 ${className}`}>{children}</div>;
 }
 
-export function CardFooter({ children, className }: { children: ReactNode; className?: string }) {
-  return <div className={`p-4 border-t border-gray-200 ${className}`}>{children}</div>;
+function CardFooter({ children, className }: { children: ReactNode; className?: string }) {
+  return <div className={`p-4  ${className}`}>{children}</div>;
 }
 
 // Button component
-export function Button({ children, asChild = false, className }: { children: ReactNode; asChild?: boolean; className?: string }) {
+function Button({ children, asChild = false, className }: { children: ReactNode; asChild?: boolean; className?: string }) {
   if (asChild) {
     return <span className={`inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded ${className}`}>{children}</span>;
   }
