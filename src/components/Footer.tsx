@@ -24,25 +24,25 @@ const Footer = () => {
               <div className="mb-8">
               <h1 className="font-semibold text-white">Office hours:</h1>
                 <p className="text-sm text-gray-400 ">
-                  Monday 6 AM - 10 PM
+                  Monday 5 AM - 10 PM
                   <br />
-                  Tuesday 6 AM - 10 PM
+                  Tuesday 5 AM - 10 PM
                   <br />
-                  Wednesday 6 AM - 10 PM
+                  Wednesday 5 AM - 10 PM
                   <br />
-                  Thursday 6 AM - 10 PM
+                  Thursday 5 AM - 10 PM
                   <br />
-                  Friday 6 AM - 10 PM
+                  Friday 5 AM - 10 PM
                   <br />
-                  Saturday 6 AM - 10 PM
+                  Saturday 5 AM - 10 PM
                   <br />
-                  Sunday 6 AM - 10 PM
+                  Sunday 5 AM - 10 PM
                 </p>
               </div>
               <div>
-              <h1 className="text-sm font-semibold text-white">Daily transportation, 6 AM - 10 PM:</h1>
+              <h1 className="text-sm font-semibold text-white">Daily transportation, 5 AM - 10 PM:</h1>
                 <p className="text-sm text-gray-400 ">
-                  Peak Elite medride operates every day from 6 AM to 10 PM providing timely transportation to your appointments. Having reliable and accessible transportation is our goal. If you have any specific question or need further information about our service, feel free to call or text our main office number: (719) 233-0707, or our satellite office numbers: (806) 787-6905 and (719) 306-7313.
+                  Peak Elite medride operates every day from 5 AM to 10 PM providing timely transportation to your appointments. Having reliable and accessible transportation is our goal. If you have any specific question or need further information about our service, feel free to call or text our main office number: (719) 233-0707, or our satellite office numbers: (806) 787-6905 and (719) 306-7313.
                 </p>
               </div>
             </div>
