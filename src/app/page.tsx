@@ -217,8 +217,8 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-lg font-bold mb-2">24/7 Support:</h3>
-                <p className="mt-2 text-base text-gray-500">We&apos;re here for you whenever you need us. Our customer support team is available 24/7 to answer your questions, make changes to your reservations, or help you with any other needs you may have.</p>
+                <h3 className="text-lg font-bold mb-2">Support Every Day, 6 AM - 10 PM:</h3>
+                <p className="mt-2 text-base text-gray-500">We&apos;re here for you when you need us. Our customer support team is available every day from 6 AM to 10 PM to answer your questions, make changes to your reservations, or help you with any other needs you may have.</p>
               </div>
             </div>
           </div>

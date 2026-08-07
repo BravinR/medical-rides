@@ -24,25 +24,25 @@ const Footer = () => {
               <div className="mb-8">
               <h1 className="font-semibold text-white">Office hours:</h1>
                 <p className="text-sm text-gray-400 ">
-                  Monday 24 hours
+                  Monday 6 AM - 10 PM
                   <br />
-                  Tuesday 24 hours
+                  Tuesday 6 AM - 10 PM
                   <br />
-                  Wednesday 24 hours
+                  Wednesday 6 AM - 10 PM
                   <br />
-                  Thursday 24 hours
+                  Thursday 6 AM - 10 PM
                   <br />
-                  Friday 24 hours
+                  Friday 6 AM - 10 PM
                   <br />
-                  Saturday 24 hours
+                  Saturday 6 AM - 10 PM
                   <br />
-                  Sunday 24 hours
+                  Sunday 6 AM - 10 PM
                 </p>
               </div>
               <div>
-              <h1 className="text-sm font-semibold text-white">24 hours transportation:</h1>
+              <h1 className="text-sm font-semibold text-white">Daily transportation, 6 AM - 10 PM:</h1>
                 <p className="text-sm text-gray-400 ">
-                  Peak Elite medride operates 24 hours a day providing timely transportation to your appointments. Having reliable and accessible transportation is our goal. If you have any specific question or need further information about our service, feel free to call or text our main office number: (719) 233-0707, or our satellite office numbers: (806) 787-6905 and (719) 306-7313.
+                  Peak Elite medride operates every day from 6 AM to 10 PM providing timely transportation to your appointments. Having reliable and accessible transportation is our goal. If you have any specific question or need further information about our service, feel free to call or text our main office number: (719) 233-0707, or our satellite office numbers: (806) 787-6905 and (719) 306-7313.
                 </p>
               </div>
             </div>
