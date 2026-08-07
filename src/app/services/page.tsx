@@ -1,5 +1,7 @@
 "use client"
 import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const services = [
     {
@@ -31,6 +33,8 @@ const services = [
 
 const NEMTService = () => {
     return (
+        <>
+        <Navbar />
         <section className="py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
@@ -69,6 +73,8 @@ const NEMTService = () => {
                 </div>
             </div>
         </section>
+        <Footer />
+        </>
     );
 };
 

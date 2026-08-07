@@ -1,5 +1,13 @@
 import Sample from "@/components/FormFile/Sample";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Page() {
-  return <Sample />;
+  return (
+    <>
+      <Navbar />
+      <Sample />
+      <Footer />
+    </>
+  );
 }

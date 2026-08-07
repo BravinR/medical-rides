@@ -1,5 +1,7 @@
 "use client"
 import React, { useState } from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const FAQAccordion: React.FC = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
@@ -9,6 +11,8 @@ const FAQAccordion: React.FC = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
@@ -245,6 +249,8 @@ const FAQAccordion: React.FC = () => {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 };
 

@@ -1,9 +1,13 @@
 import React from 'react'
 import mapImage from '../../../public/medride-colorado-service-area.jpg';
 import Image from 'next/image';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 function serviceArea() {
     return (
+        <>
+        <Navbar />
         <section className="py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
@@ -43,6 +47,8 @@ function serviceArea() {
                 </div>
             </div>
         </section>
+        <Footer />
+        </>
     )
 }
 

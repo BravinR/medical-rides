@@ -142,7 +142,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/faq"
+                href="/faqs"
                 passHref
                 className={`block py-2 pl-3 pr-4 ${
                   activePage === "faq"
@@ -156,7 +156,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/serviceArea"
+                href="/service-areas"
                 passHref
                 className={`block py-2 pl-3 pr-4 ${
                   activePage === "about"

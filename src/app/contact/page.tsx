@@ -1,9 +1,13 @@
 // ./src/app/contact/page.tsx
 
 import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 function ContactPage() {
   return (
+    <>
+    <Navbar />
     <div className="max-w-lg mx-auto p-6">
       <div className="mb-16">
           <h6 className="text-lg text-indigo-600 font-medium text-center mb-2">
@@ -64,6 +68,8 @@ function ContactPage() {
         </div>
       </form>
     </div>
+    <Footer />
+    </>
   );
 }
 

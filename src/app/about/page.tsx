@@ -1,8 +1,12 @@
 import React from 'react'
 import Image from 'next/image';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 function AboutPage() {
     return (
+        <>
+        <Navbar />
         <section className="py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
@@ -28,6 +32,8 @@ function AboutPage() {
                 </div>
             </div>
         </section>
+        <Footer />
+        </>
     )
 }
 
